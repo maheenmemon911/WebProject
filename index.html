@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things - The Upside Down</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- VHS Grain Overlay -->
+    <div class="vhs-overlay"></div>
+
+    <!-- Fog Effect -->
+    <div class="fog-container">
+        <div class="fog fog-1"></div>
+        <div class="fog fog-2"></div>
+        <div class="fog fog-3"></div>
+    </div>
+
+    <!-- Upside Down Toggle -->
+    <div class="upside-down-toggle">
+        <label class="switch">
+            <input type="checkbox" id="upsideDownToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Upside Down</span>
+    </div>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle">
+        <span class="music-icon">♪</span>
+    </button>
+
+    <!-- Hidden Audio for Theme Music -->
+    <audio id="themeAudio" loop>
+        <source src="audio/stranger-things-theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#characters" class="nav-link">Characters</a>
+            <a href="#monsters" class="nav-link">Monsters</a>
+            <a href="#timeline" class="nav-link">Seasons</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#easter-eggs" class="nav-link">Secrets</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title glitch" data-text="STRANGER THINGS">STRANGER THINGS</h1>
+            <p class="hero-subtitle flicker">
+                Stranger Things is a thrilling sci-fi series set in the 1980s in the town of Hawkins, Indiana, where mysterious experiments have opened a gateway to a dark dimension called the Upside Down. Follow the adventures of Eleven and her friends as they face supernatural creatures, uncover government secrets, and fight to protect their town.
+            </p>
+            <p class="hero-intro flicker">
+                This fan site, created by Maheen, explores the world of Stranger Things through characters, monsters, Easter eggs, and interactive elements for fans to enjoy.
+            </p>
+
+            <div class="christmas-lights">
+                <span class="light"></span><span class="light"></span>
+                <span class="light"></span><span class="light"></span>
+                <span class="light"></span><span class="light"></span>
+                <span class="light"></span><span class="light"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="section characters-section">
+        <h2 class="section-title glow-text">The Party</h2>
+        <div class="characters-grid">
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/eleven.png" class="character-img" alt="Eleven">
+                    </div>
+                    <div class="card-back">
+                        <h3>Eleven</h3>
+                        <p>Telekinetic girl with mysterious powers from Hawkins Lab</p>
+                    </div>
+                </div>
+            </div>
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/mike.png" class="character-img" alt="Mike Wheeler">
+                    </div>
+                    <div class="card-back">
+                        <h3>Mike Wheeler</h3>
+                        <p>Leader of the group, loyal friend and protector</p>
+                    </div>
+                </div>
+            </div>
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/dustin.png" class="character-img" alt="Dustin Henderson">
+                    </div>
+                    <div class="card-back">
+                        <h3>Dustin Henderson</h3>
+                        <p>Scientific mind and comic relief of the party</p>
+                    </div>
+                </div>
+            </div>
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/lucas.png" class="character-img" alt="Lucas Sinclair">
+                    </div>
+                    <div class="card-back">
+                        <h3>Lucas Sinclair</h3>
+                        <p>Practical thinker and skilled with a slingshot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/max.jpeg" class="character-img" alt="Max Mayfield">
+                    </div>
+                    <div class="card-back">
+                        <h3>Max Mayfield</h3>
+                        <p>Skateboarder with a tough exterior and brave heart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="character-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/will.png" class="character-img" alt="Will Byers">
+                    </div>
+                    <div class="card-back">
+                        <h3>Will Byers</h3>
+                        <p>Artistic soul connected to the Upside Down</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monsters Section -->
+    <section id="monsters" class="section monsters-section">
+        <h2 class="section-title glow-text">Creatures of the Upside Down</h2>
+        <div class="monsters-grid">
+            <div class="monster-card" data-monster="demogorgon">
+                <img src="images/demo.png" class="monster-img" alt="Demogorgon">
+                <h3>Demogorgon</h3>
+                <p>The original predator from the Upside Down</p>
+            </div>
+            <div class="monster-card" data-monster="mindflayer">
+                <img src="images/mindflayer.jpeg" class="monster-img" alt="Mind Flayer">
+                <h3>Mind Flayer</h3>
+                <p>The Shadow Monster controlling the Upside Down</p>
+            </div>
+            <div class="monster-card" data-monster="demobats">
+                <img src="images/demobats.jpg" class="monster-img" alt="Demobats">
+                <h3>Demobats</h3>
+                <p>Flying predators with razor-sharp teeth</p>
+            </div>
+            <div class="monster-card" data-monster="vecna">
+                <img src="images/vecna.jfif" class="monster-img" alt="Vecna">
+                <h3>Vecna</h3>
+                <p>The most powerful creature, seeking revenge</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Seasons Section -->
+    <section id="timeline" class="section timeline-section">
+        <h2 class="section-title glow-text">Timeline of Seasons</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Season 1</h3>
+                    <p>Will Byers disappears, Eleven escapes Hawkins Lab, and the first gateway to the Upside Down opens.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Season 2</h3>
+                    <p>The Mind Flayer begins influencing Will, and new threats emerge as the gate expands.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Season 3</h3>
+                    <p>Starcourt Mall becomes the center of danger as the Russians attempt to reopen the gate.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Season 4</h3>
+                    <p>Vecna rises, creating portals by targeting victims through their trauma and invading Hawkins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <h2 class="section-title glow-text">Photo Gallery</h2>
+        <div class="polaroid-container">
+            <div class="polaroid" draggable="true">
+                <img src="images/hawkinslab.webp" class="polaroid-img" alt="Hawkins Lab">
+                <div class="polaroid-caption">Hawkins National Laboratory</div>
+            </div>
+            <div class="polaroid" draggable="true">
+                <img src="images/palacearcade.jpg" class="polaroid-img" alt="Palace Arcade">
+                <div class="polaroid-caption">Palace Arcade</div>
+            </div>
+            <div class="polaroid" draggable="true">
+                <img src="images/pool.jpg" class="polaroid-img" alt="Hawkins Pool">
+                <div class="polaroid-caption">Hawkins Community Pool</div>
+            </div>
+            <div class="polaroid" draggable="true">
+                <img src="images/mall.webp" class="polaroid-img" alt="Starcourt Mall">
+                <div class="polaroid-caption">Starcourt Mall</div>
+            </div>
+            <div class="polaroid" draggable="true">
+                <img src="images/byers.webp" class="polaroid-img" alt="Byers House">
+                <div class="polaroid-caption">The Byers House</div>
+            </div>
+            <div class="polaroid" draggable="true">
+                <img src="images/upsidedown.webp" class="polaroid-img" alt="Upside Down">
+                <div class="polaroid-caption">The Upside Down</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easter Eggs Section -->
+    <section id="easter-eggs" class="section easter-eggs-section">
+        <h2 class="section-title glow-text">Hidden Secrets</h2>
+
+        <!-- Alphabet Wall -->
+        <div class="alphabet-wall">
+            <h3 class="subsection-title">Christmas Lights Alphabet</h3>
+            <p class="instruction">Click the lights to spell a message...</p>
+            <div class="alphabet-grid">
+                <!-- A-Z letters -->
+                <span class="letter-light" data-letter="A">A</span>
+                <span class="letter-light" data-letter="B">B</span>
+                <span class="letter-light" data-letter="C">C</span>
+                <span class="letter-light" data-letter="D">D</span>
+                <span class="letter-light" data-letter="E">E</span>
+                <span class="letter-light" data-letter="F">F</span>
+                <span class="letter-light" data-letter="G">G</span>
+                <span class="letter-light" data-letter="H">H</span>
+                <span class="letter-light" data-letter="I">I</span>
+                <span class="letter-light" data-letter="J">J</span>
+                <span class="letter-light" data-letter="K">K</span>
+                <span class="letter-light" data-letter="L">L</span>
+                <span class="letter-light" data-letter="M">M</span>
+                <span class="letter-light" data-letter="N">N</span>
+                <span class="letter-light" data-letter="O">O</span>
+                <span class="letter-light" data-letter="P">P</span>
+                <span class="letter-light" data-letter="Q">Q</span>
+                <span class="letter-light" data-letter="R">R</span>
+                <span class="letter-light" data-letter="S">S</span>
+                <span class="letter-light" data-letter="T">T</span>
+                <span class="letter-light" data-letter="U">U</span>
+                <span class="letter-light" data-letter="V">V</span>
+                <span class="letter-light" data-letter="W">W</span>
+                <span class="letter-light" data-letter="X">X</span>
+                <span class="letter-light" data-letter="Y">Y</span>
+                <span class="letter-light" data-letter="Z">Z</span>
+            </div>
+            <div class="spelled-word" id="spelledWord"></div>
+            <button class="clear-btn" id="clearWord">Clear</button>
+        </div>
+
+        <!-- Walkie-Talkie Zone -->
+        <div class="walkie-talkie-zone">
+            <h3 class="subsection-title">Walkie-Talkie Communications</h3>
+            <p class="instruction">Messages may appear at random...</p>
+            <div class="walkie-display">📻 Listening...</div>
+        </div>
+    </section>
+
+    <!-- Demogorgon Flash Overlay -->
+    <div class="demogorgon-flash" id="demogorgonFlash">
+        <div class="demogorgon-silhouette-large"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text flicker">Hawkins, Indiana - 1983</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">📺</a>
+                <a href="#" class="social-icon">🎮</a>
+                <a href="#" class="social-icon">📻</a>
+                <a href="#" class="social-icon">🔦</a>
+            </div>
+            <p class="footer-copyright">
+                A Stranger Things Fan Site made by Maheen as a Project for the Class of Web Engineering
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
